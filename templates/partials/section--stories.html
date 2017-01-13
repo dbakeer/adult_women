@@ -1,0 +1,8 @@
+<div class="section stories" data-anchor="stories">
+  {% set data = cms.stories %}
+  {% for object in data %}
+  <div class="horizontal-scrolling">
+    {{ object.wysiwyg_text|safe }}
+  </div>
+  {% endfor %}
+</div>

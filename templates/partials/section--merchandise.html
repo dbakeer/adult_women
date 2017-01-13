@@ -1,0 +1,12 @@
+<div class="section merchandise" data-anchor="merchandise">
+  <div class="merch-list">
+    {% set data = cms.merch %}
+    {% for object in data %}
+      <div class="merch-item">
+        <img class="merch-photo" src="{{ object.image|imageSize(200, 200) }}">
+        {{ object.name }}
+        {{ object.description_and_link|safe }}
+      </div>
+    {% endfor %}
+  </div>
+</div>

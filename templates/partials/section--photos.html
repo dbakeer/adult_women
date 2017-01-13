@@ -1,0 +1,11 @@
+<div class="section photos" data-anchor="photos">
+    {% set data = cms.photos %}
+    {% for object in data %}
+    <div class="horizontal-scrolling">
+      <div class="photo-scroll">
+        <img src="{{ object.image|imageSize(auto, auto) }}" />
+        <div class="photo-cred">{{ object.credit }}</div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
