@@ -14,7 +14,7 @@ body {
 .stories a,
 .contact a {
   color: white;
-  transition: 0.8s color;
+  transition: 2s color;
   &:hover {
     color: grey;
   }
@@ -47,33 +47,15 @@ body {
   }
 }
 
-/* merch */
-
-.merch-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
+@media screen and (max-width: 767px) {
+  .logo {
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
   }
 }
-
-.merch-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  a {
-    color: black !important;
-  }
-}
-
-.photo-scroll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .fp-responsive .fp-section,
 .fp-responsive .fp-slide,
@@ -86,66 +68,19 @@ body {
   }
 }
 
-#menu {
-  position: fixed;
-  background: transparent;
-  display: none;
-  top: 0;
-  a {
-    padding-right: 10px;
-  }
-  @media screen and (min-width: 800px) {
-    display: flex;
-  }
-}
-
-.nav-container {
-  display: flex !important;
-  flex-direction: column !important;
-  text-transform: uppercase;
-  a {
-    color: white !important;
-    font-size: 1em !important;
-  }
-}
-
 .section {
-  padding: 0 !important;
-  height: 100vh !important;
-}
-
-
-.photos img {
+  padding: 25px;
   @media screen and (min-width: 767px) {
-    width: 100vw !important;
+    padding: 0 !important;
     height: 100vh !important;
   }
 }
 
-.fp-viewing-merchandise,
 .fp-viewing-about {
   .nav-container {
     a {
       color: black !important;
-      transition: 0.8s color;
+      transition: 3s color ease;
     }
-  }
-}
-
-.fp-viewing-adult-women {
-  .nav-container {
-    a {
-      color: transparent !important;
-      transition: 0.8s color;
-    }
-  }
-}
-
-.merch-photo {
-  width: 25vw;
-  height: 25vw;
-  padding: 0 auto;
-  @media screen and (min-width: 767px) {
-    padding: 40px;
   }
 }

@@ -1,4 +1,26 @@
 #menu {
-  // position: fixed;
-  // background: red;
+  position: fixed;
+  background: transparent;
+  display: none;
+  top: 0;
+  z-index: 1000;
+  a {
+    padding-right: 10px;
+  }
+  @media screen and (min-width: 800px) {
+    display: flex;
+  }
+}
+
+.nav-container {
+  display: flex !important;
+  flex-direction: column !important;
+  text-transform: uppercase;
+  a {
+    color: white !important;
+    font-size: 1em !important;
+  }
+  a:first-child {
+    font-size: 16px !important;
+  }
 }

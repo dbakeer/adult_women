@@ -1,0 +1,36 @@
+.fp-viewing-merchandise {
+  .nav-container {
+    a {
+      color: black !important;
+      transition: 2s color;
+    }
+  }
+}
+
+.merch-photo {
+  padding: 0 auto;
+  @media screen and (min-width: 767px) {
+    padding: 40px;
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.merch-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: black !important;
+  }
+}
+
+.merch-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}

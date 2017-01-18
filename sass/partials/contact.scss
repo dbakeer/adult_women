@@ -21,16 +21,13 @@
     .contributors {
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      @media screen and (max-width: 767px) {
-        flex-direction: column;
-      }
-      .jamie,
-      .dinah {
-        padding: 25px;
-        margin: 0 5vw;
-      }
+      justify-content: space-around;
+    }
+    .jamie,
+    .dinah {
+      padding: 25px;
+      margin: 0 5vw;
+      max-width: 50vw;
     }
   }
 }

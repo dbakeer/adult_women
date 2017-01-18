@@ -93,6 +93,24 @@ html.fp-enabled,
     background: url(../images/right-arrow.png) no-repeat;
     cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .fp-controlArrow.fp-next {
+      right: 0;
+      border: none;
+      width: 75px;
+      height: 25px;
+      background: url(../images/right-arrow.png) no-repeat 50% !important;
+      cursor: pointer;
+  }
+  .fp-controlArrow.fp-prev {
+      left: 0;
+      border: none;
+      width: 75px;
+      height: 25px;
+      background: url(../images/left-arrow.png) no-repeat 50% !important;
+      cursor: pointer;
+  }
+}
 .fp-scrollable {
     overflow: hidden;
     position: relative;
