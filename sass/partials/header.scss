@@ -7,15 +7,18 @@
   a {
     padding-right: 10px;
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 767px) {
     display: flex;
   }
 }
 
 .nav-container {
-  display: flex !important;
-  flex-direction: column !important;
-  text-transform: uppercase;
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: flex !important;
+    flex-direction: column !important;
+    text-transform: uppercase;
+  }
   a {
     color: white !important;
     font-size: 1em !important;

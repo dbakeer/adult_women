@@ -1,7 +1,8 @@
 $('html').hide();
+$('#menu').hide();
 
 $(window).load(function() {
-  $('html').fadeIn(3000);
+  $('html').fadeIn(2000);
 });
 
 $(document).ready(function() {

@@ -84,3 +84,12 @@ body {
     }
   }
 }
+
+.fp-viewing-adult-women {
+  .nav-container {
+    a {
+      color: transparent !important;
+      transition: 1s color ease-in;
+    }
+  }
+}
