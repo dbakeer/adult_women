@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1024px) {
       flex-direction: column;
     }
   }
@@ -13,23 +13,48 @@
   .general {
     display: flex;
     align-items: center;
-    padding: 0 25px;
-    border: 1px solid white;
     height: 225px;
-    margin: 0 2vw 50px;
     line-height: 2;
+    @media screen and (min-width: 1024px) {
+      border: 1px solid white;
+      padding: 0 25px;
+      margin: 50px 2vw;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .general {
+      order: 1;
+    }
+    .anne {
+      order: 2;
+    }
+    .nanah {
+      order: 3;
+    }
   }
   .contributors {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    @media screen and (min-width: 767px) {
+    flex-direction: column;
+    @media screen and (min-width: 1024px) {
       justify-content: center;
+      flex-direction: row;
     }
   }
   .jamie,
   .dinah {
-    padding: 25px;
+    line-height: 2;
+    @media screen and (min-width: 1024px) {
+      padding: 25px;
+      height: auto;
+    }
+    @media screen and (max-width: 1024px) {
+      height: 225px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     margin: 0 5vw;
     max-width: 50vw;
   }

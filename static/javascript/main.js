@@ -1,5 +1,8 @@
 $('html').hide();
-$('#menu').hide();
+
+if (Modernizr.touchevents === false) {
+  $('#menu').hide();
+}
 
 $(window).load(function() {
   $('html').fadeIn(2000);
@@ -16,13 +19,14 @@ $(document).ready(function() {
       'contact'
     ],
     menu: '#menu',
-    continuousHorizontal: 'true',
-    responsiveWidth: 660,
-    scrollOverflow: true,
+    // continuousHorizontal: 'true',
     allowPageScroll: true,
+    scrollOverflow: true,
     paddingTop: 24,
     fixedElements: '#menu',
     slideSelector: '.horizontal-scrolling',
+    navigation: true,
+    navigationPosition: 'left',
     afterRender: function() {
       $('#menu').hide();
     },
@@ -34,4 +38,10 @@ $(document).ready(function() {
       }
     }
   });
+});
+
+$('a').on('click touchend', function(e) {
+    var el = $(this);
+    var link = el.attr('href');
+    window.location = link;
 });

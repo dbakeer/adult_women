@@ -93,7 +93,7 @@ html.fp-enabled,
     background: url(../images/right-arrow.png) no-repeat;
     cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .fp-controlArrow.fp-next {
       right: 0;
       border: none;
@@ -128,8 +128,8 @@ html.fp-enabled,
 #fp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -32px;
-    top: 50%;
+    margin-top: -32px !important;
+    top: 45%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }

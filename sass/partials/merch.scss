@@ -9,10 +9,8 @@
 
 .merch-photo {
   padding: 0 auto;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     padding: 40px;
-    width: 25vw;
-    height: 25vw;
   }
 }
 
@@ -30,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 }

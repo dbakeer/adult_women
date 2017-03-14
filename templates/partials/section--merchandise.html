@@ -3,7 +3,9 @@
     {% set data = cms.merch %}
     {% for object in data %}
       <div class="merch-item">
-        <img class="merch-photo" src="{{ object.image|imageSize(200, 200) }}">
+        <a href="{{ object.website }}" target="_blank">
+          <img class="merch-photo" src="{{ object.image|imageSize(200, 200) }}">
+        </a>
         {{ object.name }}
         {{ object.description_and_link|safe }}
       </div>
