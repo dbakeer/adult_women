@@ -8228,10 +8228,10 @@ body {
   color: grey;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .about .fp-tableCell,
   .stories .fp-tableCell {
-    padding: 0 10vw !important;
+    padding: 0 15vw !important;
   }
 }
 
@@ -8344,7 +8344,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .contact .creators {
     flex-direction: column;
   }
@@ -8357,7 +8357,16 @@ body {
   height: 225px;
   line-height: 2;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 767px) {
+  .contact .anne,
+  .contact .nanah,
+  .contact .general {
+    border-bottom: 1px solid white;
+    width: 300px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .contact .anne,
   .contact .nanah,
   .contact .general {
@@ -8366,7 +8375,7 @@ body {
     margin: 50px 2vw;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .contact .general {
     order: 1;
   }
@@ -8383,32 +8392,38 @@ body {
   justify-content: space-around;
   flex-direction: column;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 767px) {
   .contact .contributors {
     justify-content: center;
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .jamie {
+    border-bottom: 1px solid white;
   }
 }
 .contact .jamie,
 .contact .dinah {
   line-height: 2;
   margin: 0 5vw;
-  max-width: 50vw;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .contact .jamie,
   .contact .dinah {
     padding: 25px;
     height: auto;
+    max-width: 50vw;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .contact .jamie,
   .contact .dinah {
     height: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
   }
 }
 
@@ -8420,7 +8435,7 @@ body {
 .merch-photo {
   padding: 0 auto;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 767px) {
   .merch-photo {
     padding: 40px;
   }
@@ -8441,7 +8456,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .merch-list {
     flex-direction: column;
   }
